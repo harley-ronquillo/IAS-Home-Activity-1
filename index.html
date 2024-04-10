@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronquillo, Harley C.</title>
+</head>
+<body>
+  <link rel="stylesheet" href="css/index.css">
+  <header>
+    <div class="logo-container">
+        <a class="logo">
+            <img src="img/PUPLogo.png" alt="PUP Logo">
+        </a>
+    </div>
+    <div class="titles-container">
+        <h1 id="titlepup">Polytechnic University of the Philippines</h1>
+    </div>
+</header>
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <h1>INFORMATION ASSURANCE AND SECURITY 1</h1>
+  <BR>
+  <h2>HOME ACTIVITY #1</h2>
+  <BR>
+  <div class="button-container">
+    <p>Click the buttons below to see the difference having an authorize and unauthorize access.</p>
+    <br>
+  <button id="unauthorizedBtn" class="click">Unauthorized Access</button>
+  <button id="authorizedBtn" class="click">Authorized Access</button>
+</div>
+</div>
+
+<script>
+document.getElementById("unauthorizedBtn").addEventListener("click", function() {
+  window.location.href = "https://www.pup.edu.ph/";
+});
+
+document.getElementById("authorizedBtn").addEventListener("click", function() {
+  // Perform authorization check here (could be a login process, token validation, etc.)
+  // For this example, let's assume the user is authorized
+  window.location.href = "login.html";
+});
+</script>
+</body>
+</html>
