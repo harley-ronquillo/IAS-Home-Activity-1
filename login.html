@@ -54,11 +54,13 @@
         .then(response => response.json())
         .then(data => {
             if (data.result === 'success') {
+                alert('Log In Succesfully');
                 downloadFile();
             } else {
-                console.log('Error:', data.message);
+                alert('Error: ' + data.message); // Concatenate the error message with 'Error: '
             }
         })
+
         .catch(error => {
             console.error('Error:', error);
         });
